@@ -84,10 +84,10 @@
       position: relative;
     }
     .delete{
-      position: absolute;
+      
       top: 0;
       right: 0;
-      padding: 8px;
+      padding: 20px;
     }
     .button {
       background-color: bl; /* Green */
