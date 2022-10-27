@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
-    body{
+.hero-image {
+  background-image:url("https://www.gamespot.com/a/uploads/screen_kubrick/1562/15626911/3455923-0.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: top;
+  position: absolute;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}    
+
+body{
       max-width: 1200px;
       margin: 20px auto;
       padding: 0 20px;
@@ -27,9 +44,9 @@
     }
 
     .footer {
-      position: fixed;
+      position: relative;
       left: 0;
-      top: 97%;
+      top: 50%;
       bottom: 0;
       width: 100%;
       background-color: black;
@@ -68,6 +85,14 @@
       min-height: max-content;
     }
 
+    .image{
+      height: 50px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+
     /* index styles */
     .blogs a{
       display: block;
@@ -85,9 +110,9 @@
     }
     .delete{
       
-      top: 0;
+      bottom: 0;
       right: 0;
-      padding: 20px;
+      
     }
     .button {
       background-color: bl; /* Green */

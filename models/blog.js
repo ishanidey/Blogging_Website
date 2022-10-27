@@ -14,7 +14,23 @@ const blogSchema = new Schema({
     body: {
         type: String,
         required: true
-    }
+    },
+    body1: {
+        type: String,
+        required: true
+    },
+    body2: {
+        type: String,
+        required: true
+    },
+    body3: {
+        type: String,
+        required: true
+    },
+    image: {
+        type: String,
+        required: true,
+      },
 },{timestamps: true})
 
 //model 

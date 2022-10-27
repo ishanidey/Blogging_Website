@@ -9,14 +9,21 @@
       <p><%= blog.createdAt %></p>
       <hr />
 
+      
+
       <div class="content">
         <p><%= blog.body %></p>
       </div>
 
-      <a class="delete" data-doc="<%= blog._id %>"
-        ><button class="button">Delete</button></a
-      >
+      <div class="image">
+        <img src="<%= blog.image %>" style="width:500px;height:auto;"/>
+      </div>
+      
     </div>
+
+    <a class="delete" data-doc="<%= blog._id %>"
+      ><button class="button">Delete</button></a
+    >
 
     <%- include("../partials/footer.ejs") %>
 
