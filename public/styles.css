@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
+*{
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 .hero-image {
-  background-image:url("https://www.gamespot.com/a/uploads/screen_kubrick/1562/15626911/3455923-0.jpeg");
-  height: 100%;
+  background-image:url("https://cdn3.whatculture.com/images/2022/10/fa85cc61543320df-600x338.jpg");
+  width: 100%;
+  height: 500px;
+  object-fit: scale-down;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.hero-image-about-add {
+  background-image:url("https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Ffansided.com%2Ffiles%2F2018%2F10%2FWWE-Evolution-Womens-Battle-Royal.jpg");
+  height: 50%;
+  background-position: center;
+  object-fit: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   position: relative;
 }
 .hero-text {
@@ -19,19 +34,26 @@
 }    
 
 body{
-      max-width: 1200px;
+      max-width: 100%;
       margin: 20px auto;
       padding: 0 20px;
       font-family: 'Noto Serif', serif;
       max-width: 1200px;
     }
-    p, h1, h2, h3, a, ul{
+     h1, h2, h3, a, ul{
       margin: 0;
       padding: 0;
       text-decoration: none;
-      color: #222;
+      color: darkblue;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: black;
     }
 
+   
     /* nav & footer styles */
     
     

@@ -1,9 +1,13 @@
+<head>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+
 <html lang="en">
 <%- include("../partials/head.ejs") %>
 
 <body>
-  <%- include("../partials/nav.ejs") %>
-  <div class="w3-sand w3-grayscale w3-large">
+  <%- include("../partials/banner.ejs") %>
+  <div class="  w3-large">
   <div class="blogs content">
     <h2 w3-center w3-padding-64><span class="w3-tag w3-wide">All Blogs</span></h2>
     
@@ -12,10 +16,10 @@
       <% blogs.forEach(blog => { %>
 <a href="/blogs/<%= blog._id %>" 
 
-        <h1><%= blog.title %></h1>
+        <h3><%= blog.title %></h3>
         <h6><%= blog.createdAt %></h6>
-        <p ><%= blog.snippet %></p>
-        <img src="<%= blog.image %>" style="width:500px;height:auto;"/>
+        <p><%= blog.snippet %></p>
+        <img src="<%= blog.image %>" style="width:250px;height:auto;"/>
 
 </a>
       <% }) %>
