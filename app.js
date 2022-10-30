@@ -1,13 +1,13 @@
 const express = require("express");
 const morgan = require("morgan");
+const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes");
 const PORT = process.env.PORT || 3000;
-
 const app = express();
 
-const dbURI =
-  "mongodb+srv://ninja:ninja@nodetut.wum8x.mongodb.net/?retryWrites=true&w=majority";
+dotenv.config();
+const dbURI = process.env.MONGO_URI;
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
