@@ -19,6 +19,10 @@ const blogSchema = new Schema({
         type: String,
         required: true,
       },
+      source: {
+        type: String,
+        required: true,
+      }
 },{timestamps: true})
 
 //model 
