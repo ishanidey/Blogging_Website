@@ -108,11 +108,12 @@ body{
     }
 
     .image{
-      height: 50px;
-    width: 10%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 500px;
+    height: 500px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     }
 
     /* index styles */

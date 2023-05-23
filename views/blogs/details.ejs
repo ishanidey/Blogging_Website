@@ -7,10 +7,12 @@
     <div class="details content">
       <h1><%= blog.title %></h1>
       <p><%= blog.createdAt %></p>
-      <p><%= blog.source %></p>
+      <p>Source:<%= blog.source %></p>
       <hr />
 
-      
+      <div class="image">
+        <img src="<%= blog.image1 %>" style="width:50%;height:auto;margin-left: auto; margin-right: auto;"/>
+      </div>
 
       <div class="content">
         <p><%= blog.body %></p>
