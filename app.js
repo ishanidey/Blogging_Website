@@ -94,6 +94,11 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About' });
 });
 
+app.get('/logout', (req, res) => {
+  req.session.loggedIn = false; // Clear the loggedIn session variable
+  res.redirect('/login');
+});
+
 app.use('/blogs', blogRoutes);
 app.use('/users', userRoutes);
 
