@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/detailstyles.css">
+</head>
+
 <html lang="en">
   <%- include("../partials/head.ejs") %>
 
@@ -9,11 +13,6 @@
       <p><%= blog.createdAt %></p>
       <p>Source:<%= blog.source %></p>
       <hr />
-
-      <div class="image">
-        <img src="<%= blog.image1 %>" style="width:50%;height:auto;margin-left: auto; margin-right: auto;"/>
-      </div>
-
       <div class="content">
         <p><%= blog.body %></p>
       </div>
@@ -24,25 +23,8 @@
       
     </div>
 
-    <a class="delete" data-doc="<%= blog._id %>"
-      ><button class="button">Delete</button></a
-    >
-
     <%- include("../partials/footer.ejs") %>
 
-    <script>
-      const trashcan = document.querySelector("a.delete");
-
-      trashcan.addEventListener("click", (e) => {
-        const endpoint = `/blogs/${trashcan.dataset.doc}`;
-
-        fetch(endpoint, {
-          method: "DELETE",
-        })
-          .then((response) => response.json())
-          .then((data) => (window.location.href = data.redirect))
-          .catch((err) => console.log(err));
-      });
-    </script>
+  
   </body>
 </html>

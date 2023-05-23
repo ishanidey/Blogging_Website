@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <%- include("partials/head.ejs") %>
 </head>
 <body>
-  <h1>Login</h1>
-  <form action="/users/login" method="POST">
-    <div>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Login</button>
-  </form>
+  <%- include("partials/nav.ejs") %>
+
+  <div class="login-container login_body">
+    <h1>Login</h1>
+    <form action="/users/login" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <%- include("partials/footer.ejs") %>
 </body>
 </html>
+
