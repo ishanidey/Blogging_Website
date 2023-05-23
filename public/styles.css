@@ -405,3 +405,29 @@ login_body {
 .register-button:hover {
   background-color: #45a049;
 }
+
+.about-message {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-message p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-message a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.about-message a:hover {
+  background-color: #04AA6D;
+}
